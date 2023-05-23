@@ -33,7 +33,7 @@
                             </p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="{{route('movies.index')}}" class="btn btn-primary">Go somewhere</a>
                         </div>
 
                     </div>
