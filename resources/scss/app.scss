@@ -7,3 +7,31 @@ $fa-font-path: "../fonts/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+
+body{
+    background-color: #011F26;
+}
+
+h1{
+    color: #03A688;
+}
+
+nav{
+    background-color: #026873;
+
+    a{
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+
+        &:hover{
+            text-decoration: underline;
+            color: #F2668B;
+        }
+    }
+}
+
+.width-img{
+    width: 400px;
+}

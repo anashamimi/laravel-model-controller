@@ -3,10 +3,10 @@
 @section('content')
 <div class="d-flex align-items-center justify-content-center container">
     <div class="row">
-        <h1 class="text-center">BEST MOVIES</h1>
+        <h1 class="text-center m-5">MOVIES LIST</h1>
 
         @foreach ($movies as $movie)
-            <div class="card col-4 p-5 border-0">
+            <div class="card col-4 p-5 border-0 rounded-0">
                 <div class="card-image">
                     <img class="rounded-3 img-fluid" src="{{ $movie->image }}" alt="{{ $movie->title }}">
                 </div>
@@ -33,7 +33,7 @@
                         </p>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="{{route('movies.index')}}" class="btn btn-primary">Go somewhere</a>
+                        <a href="{{route('movies.show', ['id' => $movie->id])}}" class="btn btn-primary">Details</a>
                     </div>
 
                 </div>
